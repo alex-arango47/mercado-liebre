@@ -1,0 +1,96 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.header-login {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: #fff159;
+	width: 100vw;
+	height: 85px;
+}
+
+.login {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 1px rgba(0, 0, 0, 0);
+    box-shadow: 0px 2px #000000b6;
+    background-color: #ebebeb;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+
+.login input {
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0);
+    box-shadow: 0px 2px #03264cb6;
+    text-align: center;
+}
+
+.login label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.login button {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0);
+    box-shadow: 0px 2px #081529;
+    font-weight: bold;
+    color: white;
+    background-color: #2968c8;
+}
+
+.login button:hover {
+    cursor: pointer;
+    background-color: #225197;
+    transition: 0.3s;
+}
+
+.back-button {
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.back-button p {
+    text-decoration: none;
+}
+
+.back-button a:visited {
+    text-decoration: none;
+}

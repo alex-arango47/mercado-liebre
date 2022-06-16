@@ -194,6 +194,7 @@ header {
 .header-banner {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .header-banner img {    
@@ -207,6 +208,17 @@ header {
 h3 {
     font-size: 24px;
 }
+
+main {
+    width: 100%;
+    max-width: 1600px;
+}
+
+footer {
+    width: 100%;
+    max-width: 1600px;
+}
+
 
 @media (min-width: 320px) and (max-width: 768px) {
 
@@ -300,12 +312,13 @@ h3 {
 
 @media (min-width: 769px) and (max-width: 953px){
     
-    .header-logo a {
-        justify-content: flex-start;
+    .header-logo img {
+        text-align: center;
+        width: 70%;
     }
 
-    .header-logo img {
-        width: 70%;
+    .search-bar {
+        justify-content: flex-end;
     }
 
     .header-text {
@@ -314,6 +327,16 @@ h3 {
 
     .header-nav_text {
         display: none;
+    }
+
+    .header-nav_listB li {
+        margin-left: 1.5rem;
+        justify-content: space-around;
+    }
+    
+    .header-nav_listA li {
+        margin-right: 1.5rem;
+        justify-content: space-around;
     }
 
 }
