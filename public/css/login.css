@@ -15,8 +15,6 @@ header {
     background-color: #fff159;
 }
 
-<<<<<<< HEAD
-=======
 .header-top {
 	display: flex;
 	align-items: center;
@@ -43,7 +41,6 @@ header {
     outline: none;
 }
 
->>>>>>> 5dadb5deea594d31fdc2cb96dd0268f72d107853
 main {
     display: flex;
     flex-direction: column;
