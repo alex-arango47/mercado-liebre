@@ -70,7 +70,7 @@ main {
     position: relative;
     border-radius: 30px;
     border: solid 1px rgba(0, 0, 0, 0);
-    box-shadow: 0px 2px #000000b6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #ebebeb;
 }
 
@@ -82,18 +82,18 @@ main {
     text-decoration: none;
     border-radius: 30px;
     border: solid 1px rgba(0, 0, 0, 0);
-    box-shadow: 0px 2px #03264cb6;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: white;
     color: black;
     font-weight: bold;
     font-size: 14px;
     padding: 4px 6px 4px 6px;
+    transition: 0.3s ease-in-out;
 }
 
 .back-button:hover {
     background-color: #2968c8;
     color: white;
-    transition: 0.3s ease-in-out;
 }
 
 .back-button a {
@@ -127,7 +127,7 @@ main {
     width: 80%;
     border-radius: 10px;
     border: solid 1px rgba(0, 0, 0, 0);
-    box-shadow: 0px 2px #03264cb6;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     text-align: center;
 }
 
@@ -143,7 +143,7 @@ main {
     width: 80%;
     border-radius: 10px;
     border: solid 1px rgba(0, 0, 0, 0);
-    box-shadow: 0px 2px #081529;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-weight: bold;
     color: white;
     background-color: #2968c8;
@@ -153,4 +153,47 @@ main {
     cursor: pointer;
     background-color: #225197;
     transition: 0.3s;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header-logo {
+        display: none;
+    }
+    .header-logo_mobile {
+        display: flex;
+        width: 90%;
+        height: 90%;
+        justify-content: center;
+    }
+    .header-top a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-top img {
+        width: 124px;
+        height: 45px;
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .form-section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 80%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
 }

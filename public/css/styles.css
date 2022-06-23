@@ -5,13 +5,12 @@
 }
 
 body {
-    width: 100vw;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(208, 208, 208);
 }
 
 header {
-    width: 100vw;
     background-color: #fff159;
 }
 
@@ -19,10 +18,11 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+    width: 100%;
 	margin-bottom: 0.5rem;
-	width: 100vw;
 	height: 85px;
     border-bottom: 1px solid #ecdf51;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .header-logo_mobile {
@@ -64,7 +64,7 @@ header {
     display: none;
     border-radius: 10px;
     border: solid 1px rgba(0, 0, 0, 0);
-    box-shadow: 0px 2px #03264cb6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
     height: 36px;
     text-align: center;
@@ -73,7 +73,7 @@ header {
 .search-bar_input {
     border-radius: 10px;
     border: solid 1px rgba(0, 0, 0, 0);
-    box-shadow: 0px 2px #03264cb6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
     height: 36px;
     text-align: center;
@@ -205,12 +205,29 @@ header {
     display: none;
 }
 
-h3 {
-    font-size: 24px;
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-div.last-visit,
-div.offers{
+.main-container {
+    width: 90%;
+}
+
+
+.section-titles {
+    font-size: 20px;
+    color: black;
+    margin: 20px 0px;
+}
+
+.section-lastvisit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-offers{
     display: flex;
     flex-wrap: wrap;
 }
@@ -220,50 +237,59 @@ div.offers{
     width: 30%;
 }
 
-.discount{
+.discount {
     width: 70%;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.discount,
-.description{
+
+.description {
     font-size: 16px;
     font-weight: normal;
+    color: black;
+    margin-top: 16px;
 }
 
-h3,
-.description{
-    color: #666;
-}
-
-.description{
-    display: none;
-    margin-top: 20px;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-
-main section article{
-    background-color: #fff;    
+.products-product {
+    background-color: white;    
     margin: 10px 0px;
+    transition: all 0.3s;
 }
 
-main section article img{
+.products-product:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product-img {
+    padding: 20px;
+}
+
+.products-product img{
     width: 100%;
 }
 
-main section article i,
-.discount{
+.fa-truck {
+    border: #39b54a solid 1px;
     color: #39b54a;
+    transition: all 0.5s;
 }
 
-main section article i{
+.fa-truck:hover {
+    transform: rotate(-360deg);
+}
+
+.discount {
+    color: #39b54a;
+    transition: all 0.3s;
+}
+
+.discount:hover {
+    font-size: 18px;
+}
+
+.products-product i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -277,10 +303,6 @@ main section article i{
     top: -15px;
 }
 
-main section h3{
-    margin: 20px 0px;
-}
-
 article div.main-article{
     width: 100%;
     display: flex;
@@ -290,6 +312,52 @@ article div.main-article{
     position: relative;
     padding: 15px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+	background: white;
+	padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+    align-items: center;
+	text-align: center;
+    width: 90%;
+}
+
+.sections-footer {
+	width: 33%;
+    padding: 15px;
+    font-style: italic;
+}
+
+.footer-description {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-icon {
+	color: rgb(54, 52, 191);
+	font-size: 2em;
+	transition: all 0.3s;
+}
+
+.footer-icon:hover {
+    color: black;
+}
+
+.footer-copyright {
+    font-size: 12px;
+}
+
+
 
 @media (min-width: 361px){
     main section article .description{
@@ -323,12 +391,6 @@ article div.main-article{
         width: 22%;
     }
 }
-
-footer {
-    width: 100%;
-    max-width: 1600px;
-}
-
 
 @media (min-width: 320px) and (max-width: 768px) {
 
