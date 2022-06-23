@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/register.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
-        <script src="https://kit.fontawesome.com/dcfdec84e3.js" crossorigin="anonymous"></script>
-        <title>Mercadoliebre</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dcfdec84e3.js" crossorigin="anonymous"></script>
+    <title>Mercadoliebre</title>
+</head>
+
 <body>
     <header>
         <div class="header-top">
-            <div class="register">
-                <div class="header-logo">
-                    <a href="/"><img src="/images/logo-mercado-liebre-3.svg" alt="Mercadoliebre Logo"></a>
-                </div>
-                <div class="header-logo_mobile">
-                    <a href="/"><img src="/images/logo-mercado-liebre-4.svg" alt="Mercadoliebre Logo Mobile"></a>
-                </div>
+            <div class="header-logo">
+                <a href="/"><img src="/images/logo-mercado-liebre-3.svg" alt="Mercadoliebre Logo"></a>
+            </div>
+            <div class="header-logo_mobile">
+                <a href="/"><img src="/images/logo-mercado-liebre-4.svg" alt="Mercadoliebre Logo Mobile"></a>
             </div>
         </div>
     </header>
     <main>
-        <a href="/"><p>< Volver Atrás</p></a>
-        <main class="register">
-            <form action="/" method="POST">
+        <div class="register">
+            <a href="/" class="back-button">
+                <p>&lt Regresar</p>
+            </a>
+            <form action="/" method="POST" class="register-form">
+                <h4>Datos Básicos</h4>
                 <input type="text" name="name" placeholder="Nombre y apellido">
                 <input type="text" name="user" placeholder="Nombre de usuario">
                 <input type="email" name="email" placeholder="E-mail">
-                <br>
                 <label for="birth_date"><b>Fecha de nacimiento</b></label>
-                <br>
                 <input type="date" name="birth_date" id="birth_date">
-                <br>
                 <input type="text" name="addres" placeholder="Domicilio">
                 <h4>Perfil del usuario</h4>
                 <div class="profile">
@@ -44,7 +44,6 @@
                     <input type="radio" name="profile" value="sell" id="sell">
                     <label for="sell">Vendedor</label>
                 </div>
-
                 <h4>Intereses</h4>
                 <div class="interests">
                     <div>
@@ -69,19 +68,16 @@
                     </div>
                 </div>
                 <h4>Elegí tu foto de usuario</h4>
-                <input type="file" name="avatar">
-                <br>
-                <br>
+                <input class="input-file" type="file" name="avatar">
                 <input type="password" name="pass" placeholder="Elegí tu contraseña">
                 <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-                <br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-                <br>
-                <br>
+                <div class="final-step">
+                    <button type="submit" value="Enviar">Enviar</button>
+                    <button type="reset" value="Borrar">Borrar</button>
+                </div>
             </form>
-        </main>
+        </div>
     </main>
 </body>
+
 </html>
