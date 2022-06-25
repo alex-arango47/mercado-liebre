@@ -60,7 +60,7 @@ main {
 .register {
     width: 70%;
     max-width: 1000px;
-    margin-top: 10vh;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
