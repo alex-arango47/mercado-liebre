@@ -22,5 +22,5 @@ app.get('/register', (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log('Server started on port 4000');
+    console.log(`Server running at http://${HOST}:${PORT}/`);
 });
