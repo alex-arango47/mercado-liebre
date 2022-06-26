@@ -4,6 +4,10 @@ const path = require('path');
 
 app.use(express.static(path.resolve(__dirname, './public')));
 
+const PORT = process.env.PORT || 4000;
+const HOST = process.env.HOST || 'localhost';
+
+
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
@@ -17,6 +21,6 @@ app.get('/register', (req, res) => {
 });
 
 
-app.listen(3000, () => {
-    console.log('Server started on port 3000');
+app.listen(PORT, () => {
+    console.log('Server started on port 4000');
 });
